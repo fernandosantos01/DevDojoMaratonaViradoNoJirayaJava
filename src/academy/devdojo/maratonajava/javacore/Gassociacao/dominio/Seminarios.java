@@ -4,10 +4,22 @@ public class Seminarios {
     private String seminario;
     private Aluno[] aluno;
     private Local local;
-    private Professores professores;
+    private Professores[] professores;
 
     public Seminarios(String seminario) {
         this.seminario = seminario;
+    }
+
+    public Seminarios(String seminario, Local local) {
+        this.seminario = seminario;
+        this.local = local;
+    }
+
+    public Seminarios(String seminario, Local local, Aluno[] aluno, Professores[] professores) {
+        this.seminario = seminario;
+        this.aluno = aluno;
+        this.local = local;
+        this.professores = professores;
     }
 
     public void imprime() {
@@ -28,7 +40,10 @@ public class Seminarios {
         if (professores == null) {
             System.out.println("Não Tem Palestrante");
         } else {
-            System.out.println("Palestrante: " +professores.getNome()+" Especialidade: "+professores.getEspecialidade());
+            for (Professores professor : this.professores) {
+                System.out.println("Palestrante: " + professor.getNome() + " Especialidade: " + professor.getEspecialidade());
+            }
+
         }
 
         if (local == null) {
@@ -38,12 +53,11 @@ public class Seminarios {
         }
     }
 
-
-    public Professores getProfessores() {
+    public Professores[] getProfessores() {
         return professores;
     }
 
-    public void setProfessores(Professores professores) {
+    public void setProfessores(Professores[] professores) {
         this.professores = professores;
     }
 

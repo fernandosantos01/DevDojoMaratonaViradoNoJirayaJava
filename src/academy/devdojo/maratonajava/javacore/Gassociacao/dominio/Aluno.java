@@ -15,6 +15,7 @@ public class Aluno {
         System.out.println("Idade do Aluno: " + idade);
         if (seminarios == null) {
             System.out.println("Aluno Não está matriculado em nenhuma palestra");
+            System.out.println(seminarios.getLocal().getNomeLocal());
             return;
         }
         System.out.println("Seminario que o Aluno está matriculado: " + seminarios.getSeminario());

@@ -6,21 +6,22 @@ public class Professores {
     private Seminarios[] seminarios;
 
     public Professores(String nome) {
-        this();
+        this.nome = nome;
+    }
+
+    public Professores(String nome, String especialidade) {
         this.nome = nome;
         this.especialidade = especialidade;
     }
 
-    public Professores(String nome, String especialidade) {
-        this(nome);
+    public Professores(String nome, String especialidade, Seminarios[] seminarios) {
+        this.nome = nome;
         this.especialidade = especialidade;
-
+        this.seminarios = seminarios;
     }
 
-    public Professores() {
-    }
-    public void imprime(){
-            System.out.println("Nome Professor: "+nome+" Sua Especialidade: "+especialidade);
+    public void imprime() {
+        System.out.println("Nome Professor: " + nome + " Sua Especialidade: " + especialidade);
     }
 
     public Seminarios[] getSeminarios() {
