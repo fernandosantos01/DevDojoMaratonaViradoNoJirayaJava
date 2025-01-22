@@ -5,14 +5,27 @@ public class Pessoa {
     protected String cpf;
     protected Endereco endereco;
 
+    static {
+        System.out.println("Dentro do bloco de inicialização de pessoa");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização de pessoa 1");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização de pessoa  2");
+    }
+
     public Pessoa(String nome) {
+        System.out.println("Dentro do construtor Pessoa");
         this.nome = nome;
     }
 
     public void imprime() {
         System.out.println("Nome: " + this.nome);
         System.out.println("CPF: " + this.cpf);
-        System.out.println("Endereço: "+this.endereco.getRua() + " " + this.endereco.getCep());
+        System.out.println("Endereço: " + this.endereco.getRua() + " " + this.endereco.getCep());
     }
 
     public String getNome() {
