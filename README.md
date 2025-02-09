@@ -4,7 +4,7 @@ Bem-vindo ao repositório **Maratona Java Virado no Jiraya**! Este repositório 
 
 ## Sobre o Curso
 
-A "Maratona Java Virado no Jiraya" é um curso intensivo que abrange desde os fundamentos até tópicos avançados da linguagem Java. O curso é ministrado por [William Suane](https://www.linkedin.com/in/williamsuane/), fundador do DevDojo, e está disponível gratuitamente no YouTube. :contentReference[oaicite:0]{index=0}
+A "Maratona Java Virado no Jiraya" é um curso intensivo que abrange desde os fundamentos até tópicos avançados da linguagem Java. O curso é ministrado por [William Suane](https://www.linkedin.com/in/williamsuane/), fundador do DevDojo, e está disponível gratuitamente no YouTube.
 
 ## Estrutura do Repositório
 
